@@ -1,4 +1,4 @@
-defmodule WhiteBread.Test.FirstContext do
+defmodule WhiteBread.Acceptance.FirstContext do
   use WhiteBread.Context
 
   given_ ~r/^I am serious$/, fn state ->

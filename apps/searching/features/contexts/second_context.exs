@@ -1,4 +1,4 @@
-defmodule WhiteBread.Test2.SecondContext do
+defmodule WhiteBread.Acceptance.SecondContext do
   use WhiteBread.Context
 
   given_ ~r/^modafoca$/, fn state ->
@@ -9,12 +9,8 @@ defmodule WhiteBread.Test2.SecondContext do
     {:ok, state}
   end
 
-  given_ ~r/^serious modafoca$/, fn state ->
-    {:ok, state}
-  end
-
   then_ ~r/^laugh modafoca$/, fn state ->
-    {:ok, state}
+    {:error, state}
   end
   
 end
